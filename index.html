@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Color Picker Carousal</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="slide">
+            <div class="box">
+                <code>Slide 1</code>
+                <br><br>
+                <input type="color" id="color0" value="#FFFFFF" onchange="showSlide(0)">
+                <p id="colorCode0"></p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="box">
+                <code>Slide 2</code>
+                <br><br>
+                <input type="color" id="color1" value="#FFFFFF" onchange="showSlide(1)">
+                <p id="colorCode1"></p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="box">
+                <code>Slide 3</code>
+                <br><br>
+                <input type="color" id="color2" value="#FFFFFF" onchange="showSlide(2)">
+                <p id="colorCode2"></p>
+            </div>
+        </div>
+    </div>
+
+    
+    <a class="prev" onclick="changeSlide(-1)">❮</a>
+    <a class="next" onclick="changeSlide(1)">❯</a>
+
+    <script src="/assets/js/script.js"></script>
+    
+</body>
+</html>
